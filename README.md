@@ -1,6 +1,8 @@
 # How does climate change feel around the globe?
 Exposure of populations across the world to extreme heat. Final project at [Spiced Academy](https://www.spiced-academy.com/en). Coded with Python.
 
+Final presentation caan be found in 'presentation_graduation.pdf'.
+
 
 ## Questions
 
