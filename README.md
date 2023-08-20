@@ -25,8 +25,7 @@ All for datasets can be found in the 'data' folder as CSV files in its raw form.
 
 Cleaning and wrangling is part of the data_exploration.ipynb notebook in the 'notebooks' folder.
 
-Some examples of used techniques include filtering for relevant rows and columns ('ref_area' includes numerical characters)
-
+Some examples of used techniques include filtering for relevant rows and columns. For example, unnecessary rows with data about provinces can be distinguished by containing numerical characters in the 'ref_area' column, for which reason they were dropped.
 ```
 # only 'ref_area' without numerical characters
 df_exp = df_exp.loc[~(df_exp['ref_area'].str.endswith(('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')))]
@@ -39,7 +38,7 @@ df_pop.reset_index(drop=True, inplace=True)
 df_pop = df_pop.drop(['measure', 'unit_measure', 'sex', 'age'], axis='columns')
 ```
 
-creating new columns with country names using alpha3 codes and vice versa.
+Creating new columns with country names using alpha3 codes and vice versa.
 
 ```
 # alpha3 to country
@@ -75,7 +74,7 @@ df_gdp['ref_area'] = df_gdp['country'].map(country_alpha3_inversed)
 df_gdp = df_gdp[['ref_area', 'country', 'time_period', 'gdp']]   # redorder columns
 ```
 
-or a column with average values
+Creating a column with average values.
 
 ```
 # relevant years in climate data
@@ -97,7 +96,7 @@ Analysis is as well part of the data_exploration.ipynb notebook in the 'notebook
 
 Large number of analytical steps was performed with the cleaned data. These steps included for example:
 
-calculating correlation coefficients
+Calculating correlation coefficients.
 
 ```
 countries = list(df_analyze_corr['ref_area'].unique())   # list of countries present
@@ -110,7 +109,7 @@ for country in countries:
     corr_coeffs.append(coeff)   # store the coefficient inside of the list
 ```
 
-calculating weighted averages
+Calculating weighted averages.
 
 ```
 years = list(df_exp_pop['time_period'].unique())   # list of years present
@@ -122,7 +121,7 @@ for year in years:
     exp_world.append(avg_world)   # store the average inside of the list
 ```
 
-merging data frames, grouping and clustering with k-means
+Merging data frames, grouping and clustering with k-means.
 
 ```
 # merge
