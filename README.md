@@ -23,7 +23,7 @@ All for datasets can be found in the 'data' folder as CSV files in its raw form.
 
 ## Cleaning and wrangling with Pandas and Pycountry
 
-Cleaning and wrangling is part of the data_exploration.ipynb notebook in the 'notebooks' folder.
+The whole cleaning process is described in the cleaning.ipynb notebook in the 'notebooks' folder.
 
 Some examples of used techniques include filtering for relevant rows and columns. For example, unnecessary rows with data about provinces can be distinguished by containing numerical characters in the 'ref_area' column, for which reason they were dropped.
 ```
@@ -92,7 +92,7 @@ df_temp_anomaly = df_temp_anomaly[['year', 'avg_anomaly']]
 
 ## Analysis with Pandas, Scikit-learn and SciPy
 
-Analysis is as well part of the data_exploration.ipynb notebook in the 'notebooks' folder.
+The whole analysis is described in the analysis.ipynb notebook in the 'notebooks' folder.
 
 Large number of analytical steps was performed with the cleaned data. These steps included for example:
 
