@@ -25,7 +25,7 @@ All data sets can be found in the 'data' folder as CSV files in its raw form.
 
 The whole cleaning process is described in the cleaning.ipynb notebook in the 'notebooks' folder.
 
-Some examples of used techniques include filtering for relevant rows and columns. For example, unnecessary rows with data about provinces can be distinguished by containing numerical characters in the 'ref_area' column, for which reason they were dropped.
+One example of the techniques used includes filtering for relevant rows and columns. For example, unnecessary rows with data about provinces can be distinguished by containing numerical characters in the 'ref_area' column, for which reason they were dropped.
 ```
 # only 'ref_area' without numerical characters
 df_exp = df_exp.loc[~(df_exp['ref_area'].str.endswith(('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')))]
