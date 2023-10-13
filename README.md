@@ -18,7 +18,7 @@ I obtained most of the data from public database of the Organisation for Economi
 
 In addition, I used [NASA data on temperature anomaly](https://data.giss.nasa.gov/gistemp/) and [UN data on GDP per capita](http://data.un.org/Data.aspx?q=gdp+per+capita&d=SNAAMA&f=grID%3a101%3bcurrID%3aUSD%3bpcFlag%3a1).
 
-All for datasets can be found in the 'data' folder as CSV files in its raw form.
+All data sets can be found in the 'data' folder as CSV files in its raw form.
 
 
 ## Cleaning and wrangling with Pandas and Pycountry
