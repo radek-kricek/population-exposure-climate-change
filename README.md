@@ -71,7 +71,7 @@ for key in range(len(new_keys)):
 
 # apply
 df_gdp['ref_area'] = df_gdp['country'].map(country_alpha3_inversed)
-df_gdp = df_gdp[['ref_area', 'country', 'time_period', 'gdp']]   # redorder columns
+df_gdp = df_gdp[['ref_area', 'country', 'time_period', 'gdp']]   # reorder columns
 ```
 
 Creating a column with average values.
